@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Hunt</title>
+    <style media="screen">
+      #two{color: rgb(255, 0, 124)}
+      #one {color: blue}
+      #three{-webkit-filter: saturate(300%)}
+      #four{-webkit-filter: contrast(300%)}
+      #five{background: hsla(120, 100%, 50%, 0.3)}
+      .hex{
+     color:#50ccff
+   }
+   .hue{
+     color: hsl(120, 100%, 50%);
+   }
+   .brightness{
+     -webkit-filter: brightness(80%);
+   }
+   .opacity{
+     -webkit-filter: opacity(60%);
+   }
+    </style>
+  </head>
+<h1>Web Hunt</h1>
+  <body>
+    <h2>RGB Values</h2>
+    <p id="two">a system that represents the colors in a computer display. Red, green, and blue are used to make any color in the visible spectrum. </p>
+    <h2>Color Names</h2>
+    <p id="one">names of simple colors can also be used</p>
+    <h2>    Saturation</h2>
+    <p>The intensity of a color in an image</p>
+    <img src="pineapple.jpg" alt="" id="three">
+    <h2>Contrast</h2>
+    <p>The difference between colors.</p>
+    <img src="pineapple.jpg" alt="" id="four">
+    <h2>CSS3 hsla</h2>
+    <p id="five">hsla stands for hue, saturation, lightness, and alpa, or opacity. This can be used to specify colors.</p>
+    <p class="hex">A hex triplet is a six-digit,
+      three-byte hexadecimal number used in HTML, CSS, SVG,
+      and other computing applications to represent colors.
+      The bytes represent the red, green and blue components of the
+      color. One byte represents a number in the range 00 to FF
+      (in hexadecimal notation), or 0 to 255 in decimal notation.
+      The azure color of this paragraph is done with the hex code 50ccff
+    </p>
+
+    <h2>Hue</h2>
+    <p class="hue">Hue is a degree on the color wheel (from 0 to 360) - 0
+      (or 360) is red, 120 is green, <br>240 is blue. Saturation is a percentage
+      value; 0% means a shade of gray and 100% <br>is the full color.
+      Lightness is also a percentage; 0% is black, 100% is white.<br>
+      The green of this paragraph was done using a hue value</p>
+
+    <h2>Brightness</h2>
+    <img class="brightness"src="pineapple.jpg" alt="Its a pineapple...">
+    <p>Brightness is a filter you can apply to immages to set how bright they are,
+      0% <br>being pitch black, and 100% being normal brightness. This pineapple has
+       80%<br> of its normal brightness</p>
+    <br>
+  <h2>Opacity</h2>
+  <img class="opacity"src="pineapple.jpg" alt="again, a pineapple">
+  <p>Opacity is the degree to which an element is transparent, 100%<br>
+    being fully solid, 0% being fully transparent. This pineapple has<br>
+    an opacity of 60%
+
+  </body>
+</html>
