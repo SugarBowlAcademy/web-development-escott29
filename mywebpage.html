@@ -3,22 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>My Webpage</title>
-    <style media="screen">
-      h1{border: 17px solid #FF681F}
-      ul{border: 10px dotted }
-      img{border: 12px solid #ED0A3F}
-      ol{border: 17px solid #299617; background: #FB4D46}
-      table{border: 17px solid #299617; background: #FB4D46}
-    </style>
-  </head>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>  </head>
   <body style="color:702670;background:#8FD400">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Skiing</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="ski.html">Picture <span class="sr-only">(current)</span></a></li>
+        <li><a href="sbsta.html">SBSTA <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skiing <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://my.ussa.org/portalhttp://my.ussa.org/portal">My Points</a></li>
+            <li><a href="http://fwskiing.org/">Far West</a></li>
+            <li><a href="http://www.sugarbowl.com/home">Sugar Bowl</a></li>
+            <li role="separator" class="divider"></li>
+
+          </ul>
+        </li>
+      </ul>
+</nav>
     <h1>My Webpage </h1>
     <img src="little.jpg" alt=""width="200">
     <p>This is me.</p>
     <hr>
     <img src="climb.jpg" alt=""width="200">
-    <ul>
-      <li>I like to climb</li>
+    <ul class= "list">
+      <li >I like to climb</li>
       <li>I have been climbing since I was three</li>
       <li>This is me climbing in Australia</li>
     </ul>
@@ -77,5 +102,6 @@
         <hr>
         <a href="mywebpagelink.html">enjoy a beautiful photo</a>
         <hr>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
