@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <input id = 'groceries'></input>
+    <button onclick="add()">submit</button>
+    <script>
+      function add(){
+        var text = document.createElement('p');
+        var bad = document.getElementById('groceries').value;
+        var newText = document.createTextNode(bad);
+        text.appendChild(newText);
+        const main = document.getElementsByTagName('body')[0];
+        main.appendChild(text);
+        var anything = ""
+        document.getElementById('groceries').value = anything
+
+      }
+    </script>
+  </body>
+</html>
