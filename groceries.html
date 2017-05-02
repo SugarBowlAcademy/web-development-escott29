@@ -9,34 +9,51 @@
     <h1>Grocery List</h1>
     <input id = 'groceries'></input>
     <button id ="submit">submit</button>
-    <p id = "milk" class = 'thing'>milk</p>
+    <div id="list">
+      <p>food</p>
+      <p>rat poison</p>
+      <p>milk</p>
+      </div>
     <script>
-      function add(){
-        var text = document.createElement('p');
-        var bad = document.getElementById('groceries').value;
-        var newText = document.createTextNode(bad);
-        text.appendChild(newText);
-        const main = document.getElementsByTagName('body')[0];
-        main.appendChild(text);
-        var anything = ""
-        document.getElementById('groceries').value = anything
+      // function add(){
+      //   var text = document.createElement('p');
+      //   var bad = document.getElementById('groceries').value;
+      //   var newText = document.createTextNode(bad);
+      //   text.appendChild(newText);
+      //   const main = document.getElementsByTagName('body')[0];
+      //   main.appendChild(text);
+      //   var anything = ""
+      //   document.getElementById('groceries').value = anything
 
-      }
+      //}
 
-      var el= document.getElementById('submit');
-      //el.onclick=add;
-      function myFunction2() {
-          var x = document.getElementsByTagName("p")[0];
-              x.className = "heading";
-      }
-      function undo(){
-        var x = document.getElementsByTagName("p")[0];
-            x.className = "";
-          }
-      el.addEventListener('click',add,false);
-      var paragraph = document.getElementById('milk');
-      paragraph.addEventListener('mouseover',myFunction2,false);
-      paragraph.addEventListener('mouseout',undo,false);
+      // var el= document.getElementById('submit');
+      // //el.onclick=add;
+      // function myFunction2() {
+      //     var x = document.getElementsByTagName("p")[2];
+      //         x.className = "";
+      // }
+      // function undo(){
+      //   var x = document.getElementsByTagName("p")[2];
+      //       x.className = "";
+          //}
+        function changeClass(e){
+          document.getElementById('list')
+          var target = e.target
+          target.className='highlight'
+        }
+        function changeClass2(e){
+          var target = e.target
+          target.className=''
+        }
+      //   var el=document.getElementById('submit')
+      // el.addEventListener('click',add,false);
+      // var paragraph = document.getElementById('milk');
+      // paragraph.addEventListener('mouseover',myFunction2,false);
+      // paragraph.addEventListener('mouseout',undo,false);
+      var la = document.getElementById('list')
+      la.addEventListener('mouseover',changeClass,false);
+      la.addEventListener('mouseout',changeClass2,false);
 
 
 

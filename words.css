@@ -1,19 +1,15 @@
+.highlight{
+  background: blue;
+}
+
 h1 {
-  background: rgb(131, 122, 142);
-  margin: 10px;
-  border: 5px solid blue;
   text-align: center;
-  text-shadow: 2px 2px rgb(16, 35, 116);
 }
 
 .heading {
   font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
   color: green;
-  background-color:white;
-  border: none;
+  background-color:black;
 }
 
 .heading2 {
